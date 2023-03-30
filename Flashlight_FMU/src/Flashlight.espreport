@@ -1,0 +1,130 @@
+{
+  "input":"Flashlight.esp",
+  "inputs":[
+    "Flashlight.esp"
+  ],
+  "stats":{
+    "executionStart":"2023-03-30T15:05:00.319241303Z",
+    "duration_ms":28,
+    "info":0,
+    "warning":0,
+    "error":0,
+    "ruleCount":12,
+    "ruleExecutionCount":186
+  },
+  "rules":[
+    {
+      "id":"ESP_COMM_010",
+      "label":"Reference Shall Be Consistent",
+      "description":"All references must be resolved.",
+      "severity":"ERROR",
+      "classes":[
+        "Model"
+      ]
+    },
+    {
+      "id":"ESP_COMM_001",
+      "label":"Name Required",
+      "description":"All object must have a name.",
+      "severity":"ERROR",
+      "classes":[
+        "ESPEntity"
+      ]
+    },
+    {
+      "id":"ESP_COMM_012",
+      "label":"Requires a Type",
+      "description":"Some objects require a Type.",
+      "severity":"ERROR",
+      "classes":[
+        "HasType"
+      ]
+    },
+    {
+      "id":"ESP_COMM_011",
+      "label":"Connected Port Consistency",
+      "description":"Connected Ports must reference compatible Interfaces. \nCompatible Interfaces must have compatible Data and compatible Operations. \nCompatible Data have the same name and reference the same Type. \nCompatible Operations have the same Arguments and the same return Type.",
+      "severity":"ERROR",
+      "classes":[
+        "Connector"
+      ]
+    },
+    {
+      "id":"ESP_COMM_003",
+      "label":"Execution Requires a Referenced Data",
+      "description":"Data must be set for a DataReceivedExecution or a DataSendCompletedExecution.",
+      "severity":"ERROR",
+      "classes":[
+        "DataReceivedExecution",
+        "DataSendCompletedExecution"
+      ]
+    },
+    {
+      "id":"ESP_COMM_002",
+      "label":"Execution Requires a Referenced Port",
+      "description":"Port must be set for a DataReceivedExecution, DataSendCompletedExecution or OperationInvokedExecution.",
+      "severity":"ERROR",
+      "classes":[
+        "DataReceivedExecution",
+        "DataSendCompletedExecution",
+        "OperationInvokedExecution"
+      ]
+    },
+    {
+      "id":"ESP_COMM_005",
+      "label":"Execution Periodic Shall Be Consistent",
+      "description":"A valid period must be set for a PeriodicExecution.",
+      "severity":"ERROR",
+      "classes":[
+        "PeriodicExecution"
+      ]
+    },
+    {
+      "id":"ESP_COMM_004",
+      "label":"ComponentInstance Requires a Referenced Type",
+      "description":"ComponentTnstance must reference an existing Component or Assembly.",
+      "severity":"ERROR",
+      "classes":[
+        "ComponentInstance"
+      ]
+    },
+    {
+      "id":"ESP_COMM_007",
+      "label":"Port requires a referenced Interface",
+      "description":"Port must reference an existing Interface.",
+      "severity":"ERROR",
+      "classes":[
+        "Port"
+      ]
+    },
+    {
+      "id":"ESP_COMM_006",
+      "label":"Execution Requires a Referenced Operation",
+      "description":"Operation must be set for a OperationInvokedExecution.",
+      "severity":"ERROR",
+      "classes":[
+        "OperationInvokedExecution"
+      ]
+    },
+    {
+      "id":"ESP_COMM_009",
+      "label":"ConnectorEnd requires a referenced Port",
+      "description":"ConnectorEnd must reference an existing Port.",
+      "severity":"ERROR",
+      "classes":[
+        "ConnectorEnd"
+      ]
+    },
+    {
+      "id":"ESP_COMM_008",
+      "label":"Name C Compliancy",
+      "description":"Name must be C compliant.",
+      "severity":"WARNING",
+      "classes":[
+        "ESPEntity"
+      ]
+    }
+  ],
+  "diagnostics":[
+  ]
+}

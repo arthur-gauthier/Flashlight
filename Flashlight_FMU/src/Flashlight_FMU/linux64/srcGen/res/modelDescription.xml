@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<fmiModelDescription fmiVersion="2.0" modelName="Flashlight" guid="_2022x_1ad00ce_1659678666246_667973_3242" generationTool="FMU Factory" variableNamingConvention="structured" generationDateAndTime="2023-03-30T15:05:00Z">
+	<CoSimulation modelIdentifier="Flashlight" canHandleVariableCommunicationStepSize="true" />
+	<TypeDefinitions>
+		<SimpleType name="fmi_bool">
+			<Boolean/>
+		</SimpleType>
+		<SimpleType name="fmi_char">
+			<Integer min="0" max="255"/>
+		</SimpleType>
+		<SimpleType name="fmi_short">
+			<Integer min="-32768" max="32767"/>
+		</SimpleType>
+		<SimpleType name="fmi_int">
+			<Integer min="-2147483648" max="2147483647"/>
+		</SimpleType>
+		<SimpleType name="fmi_long">
+			<Integer min="-2147483648" max="2147483647"/>
+		</SimpleType>
+		<SimpleType name="fmi_unsigned_char">
+			<Boolean/>
+		</SimpleType>
+		<SimpleType name="fmi_unsigned_short">
+			<Integer min="0" max="65535"/>
+		</SimpleType>
+		<SimpleType name="fmi_float">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_double">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_long_double">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_char*">
+			<String/>
+		</SimpleType>
+
+	</TypeDefinitions>
+	<ModelVariables>
+		<ScalarVariable name="Flashlight_pin_io" valueReference="1" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_InputSignal_On.trigger" valueReference="2" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_InputSignal_Off.trigger" valueReference="3" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_light_InputSignal_Tick.trigger" valueReference="4" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_pout_io" valueReference="5" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_fp_counts_data" valueReference="6" variability="discrete" causality="output" initial="exact">
+			<Integer declaredType="fmi_int" start="0"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_light_On.trigger" valueReference="7" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_light_Off.trigger" valueReference="8" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_light_Tick.trigger" valueReference="9" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_light_snd" valueReference="10" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_control_On.trigger" valueReference="11" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_control_Off.trigger" valueReference="12" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_control_Tick.trigger" valueReference="13" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_timer_control_snd" valueReference="14" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_light_light_On.trigger" valueReference="15" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_light_light_Off.trigger" valueReference="16" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_light_light_Tick.trigger" valueReference="17" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_light_light_snd" valueReference="18" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_light_pout_io" valueReference="19" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_button_control_On.trigger" valueReference="20" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_button_control_Off.trigger" valueReference="21" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_button_control_Tick.trigger" valueReference="22" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_button_control_snd" valueReference="23" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_button_pin_io" valueReference="24" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_count_countin_io" valueReference="25" variability="discrete" causality="local" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Flashlight_count_fp_counts_data" valueReference="26" variability="discrete" causality="local" initial="exact">
+			<Integer declaredType="fmi_int" start="0"/>
+		</ScalarVariable>
+
+	</ModelVariables>
+	<ModelStructure/>
+</fmiModelDescription>
